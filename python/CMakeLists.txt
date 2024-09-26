@@ -115,6 +115,7 @@ endif()
 find_package(cucim CONFIG REQUIRED
     HINTS ${CUCIM_SDK_PATH}/install/${CMAKE_INSTALL_LIBDIR}/cmake/cucim
           $ENV{PREFIX}/include/cmake/cucim # In case conda build is used
+          /home/ki_admin/repos/cucim/install
     )
 
 ################################################################################

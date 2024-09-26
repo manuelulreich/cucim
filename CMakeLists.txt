@@ -118,7 +118,7 @@ superbuild_depend(fmt)
 superbuild_depend(abseil)
 # superbuild_depend(rmm) # this imports googletest internally
 superbuild_depend(googletest)
-superbuild_depend(googlebenchmark)
+#superbuild_depend(googlebenchmark)
 superbuild_depend(openslide)
 superbuild_depend(catch2)
 superbuild_depend(cli11)
@@ -138,7 +138,7 @@ set(CUCIM_PACKAGE_NAME cucim) # cucim
 ################################################################################
 add_subdirectory(cpp)
 add_subdirectory(gds)
-add_subdirectory(benchmarks)
+#add_subdirectory(benchmarks)
 add_subdirectory(examples/cpp)
 
 ################################################################################
@@ -155,7 +155,7 @@ configure_file(${CMAKE_CURRENT_LIST_DIR}/examples/cpp/CMakeLists.txt.examples.re
 set(INSTALL_TARGETS
         ${CUCIM_PACKAGE_NAME}
         fmt-header-only
-        cucim_benchmarks
+        #cucim_benchmarks
         )
 
 install(TARGETS ${INSTALL_TARGETS}
